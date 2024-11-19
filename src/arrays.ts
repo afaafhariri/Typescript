@@ -15,6 +15,8 @@ const lowerCase = names.forEach((name: string) => {
 });
 console.log(lowerCase); //content displayed in next line
 
+console.log();
+
 const lowerCaseArray = names.map((name: string) => {
   return name.toLowerCase();
 });
