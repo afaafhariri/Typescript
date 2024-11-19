@@ -8,8 +8,8 @@ console.log(second); //Messi
 console.log(third); //Ronaldo
 
 let [first, , third] = person; //skipping or ignoring
-console.log(first);
-console.log(third);
+console.log(first); //Hariri
+console.log(third); //Ronaldo
 
 let [first, ...rest] = person; //catch the rest using rest operator (...)
 console.log(first); //Hariri
