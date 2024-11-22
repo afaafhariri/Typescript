@@ -13,4 +13,4 @@ const indefiniteRest = (...numbers: number[]): number[] => {
 console.log(indefiniteRest(1, 2, 3, 4, 5, 6, 7));
 console.log(indefiniteRest(123, 3, 121, 32, 12, 33, 6));
 
-const anything = (...anyParameter: any[]) => {}; //Array gets any type of parameters
+const anything = (...anyParameter: any[]) => {}; //Array gets any type of input
