@@ -1,4 +1,4 @@
-//tuples are typed array with known types of values at each index
+//tuples are typed arrays with different known types of values at each index
 let mytuple: [number, string, boolean];
 mytuple = [10, "Hariri", true];
 console.log(mytuple); //[ 10, 'Hariri', true ]
