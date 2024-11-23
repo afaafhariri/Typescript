@@ -68,3 +68,10 @@ const clearOptionalCallBack = (
     console.log(`x = ${x} which is smaller than 0`);
   }
 };
+
+//used in eventListeners
+/*
+document.addEventListener('click', (event) => {
+  console.log('Clicked!', event);
+});
+*/
