@@ -1,26 +1,22 @@
 "use strict";
-/*
-const calculateCallback = (
-  x: number,
-  y: number,
-  operation: (a: number, b: number) => number //the callback function will handle and return a number
-): number => {
-  return operation(x, y);
+const calculateCallback1 = (x, y, operation //the callback function will handle and return a number
+) => {
+    console.log("calculating ...");
+    return operation(x, y);
 };
 //must declare the type a callback will handle. It is called type signature.
 //callback function's implementation will be done later
-const addition = calculateCallback(4, 5, (x, y) => {
-  return x + y;
+const addition = calculateCallback1(4, 5, (x, y) => {
+    return x + y;
 });
 //console.log(addition); // 9
-
-const multiply = calculateCallback(2, 5, (a, b) => {
-  return a * b;
+const multiply = calculateCallback1(2, 5, (a, b) => {
+    return a * b;
 });
 //console.log(multiply); // 10
-*/
 //optional callbacks
-const calculateCallback = (x, y, operation //optional callback unimplemented
+//you can either call or leave it
+const calculateCallback2 = (x, y, operation //optional callback unimplemented
 ) => {
     if (operation) {
         if (x > 0) {
@@ -33,6 +29,25 @@ const calculateCallback = (x, y, operation //optional callback unimplemented
         console.log(`printing ${x} and ${y} as no operation is executed`);
     }
 };
-console.log(calculateCallback(2, 4, (x, y) => {
-    return x * y;
-}));
+const clearCallBack = (x, y, callbackfunction) => {
+    return callbackfunction(x, y);
+};
+const clearOptionalCallBack = (x, y, callbackfunction) => {
+    if (x > 1) {
+        if (callbackfunction) {
+            return callbackfunction(x, y);
+        }
+        else {
+            return;
+        }
+    }
+    else {
+        console.log(`x = ${x} which is smaller than 0`);
+    }
+};
+//used in eventListeners
+/*
+document.addEventListener('click', (event) => {
+  console.log('Clicked!', event);
+});
+*/
