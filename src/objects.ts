@@ -36,8 +36,13 @@ let person1: person = {
   age: 38,
   about: "Footballer @InterMiamiCF", //leave about if you want
 };
+//readonly properties cannot be modified
+interface readOnlyExample {
+  readonly name: string;
+  age: number;
+}
 
-//using intersections
+//using intersections to combine objects / interfaces
 type A = { name: string };
 type B = { age: number };
 type C = { about?: string }; //optional type
@@ -48,6 +53,32 @@ let newPlayer: Player = {
   name: "Cristiano",
   age: 39,
   about: "Footballer @RealMadridCF",
+};
+
+interface address {
+  houseNumber: number;
+  street: string;
+  town: string;
+  other?: { province: string; postalCode: number };
+}
+interface onePerson {
+  name: { firstName: string; lastName: string };
+  age: number;
+  profession?: string;
+  school?: string;
+  isMarried?: boolean;
+}
+type Citizen = onePerson & address;
+let citizen: Citizen = {
+  name: {
+    firstName: "Hariri",
+    lastName: "Hameem",
+  },
+  age: 12,
+  school: "SLIIT",
+  houseNumber: 79,
+  street: "SM Road",
+  town: "Maruthamunai",
 };
 
 //multilayered properties
