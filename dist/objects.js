@@ -28,6 +28,17 @@ let newPlayer = {
     age: 39,
     about: "Footballer @RealMadridCF",
 };
+let citizen = {
+    name: {
+        firstName: "Hariri",
+        lastName: "Hameem",
+    },
+    age: 12,
+    school: "SLIIT",
+    houseNumber: 79,
+    street: "SM Road",
+    town: "Maruthamunai",
+};
 //multilayered properties
 const multiLayered = {
     name: "You",
