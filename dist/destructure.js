@@ -18,12 +18,11 @@ console.log(rest); // Messi, Ronaldo
 //setting value if array elements do not exist
 let [first, second, third, fourth = "Afaaf"] = person;
 console.log(fourth); //Afaaf
-
+*/
 //destructuring in functions
-const arrayDeStructure = (array: string[]) => {
-  const [first, ...rest] = array;
-  console.log(first);
-  console.log(rest);
+const arrayDeStructure = (array) => {
+    const [first, ...rest] = array;
+    console.log(first);
+    console.log(rest);
 };
 arrayDeStructure(person);
-*/

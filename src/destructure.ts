@@ -1,5 +1,6 @@
 //destructuring arrays
 let person = ["Hariri", "Messi", "Ronaldo"];
+
 /*
 let [first, second, third] = person; //values are assigned in order
 console.log(first); //Hariri
@@ -17,6 +18,7 @@ console.log(rest); // Messi, Ronaldo
 //setting value if array elements do not exist
 let [first, second, third, fourth = "Afaaf"] = person;
 console.log(fourth); //Afaaf
+*/
 
 //destructuring in functions
 const arrayDeStructure = (array: string[]) => {
@@ -25,4 +27,3 @@ const arrayDeStructure = (array: string[]) => {
   console.log(rest);
 };
 arrayDeStructure(person);
-*/
