@@ -17,3 +17,6 @@ union = "Hariri";
 //console.log(union); //Hariri
 union = 100;
 //console.log(union); //100
+
+//literal types
+let literal: "up" | "right" | "down" | "left";
