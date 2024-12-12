@@ -24,9 +24,6 @@ class Animal {
   constructor(species: string) {
     this.species = species;
   }
-  public makeSound(): string {
-    return "Meowwwww";
-  }
 }
 class Cat extends Animal {
   private breed: string;
@@ -36,9 +33,11 @@ class Cat extends Animal {
     this.breed = breed;
   }
 
-  private details(): string {
+  public details(): string {
     return `This animal species is ${this.species} and the breed is ${this.breed}`;
   }
 }
 
-const newAnimal = new Cat("Cat", "British Short Hair");
+const newAnimal = new Cat("British Short Hair", "Cat");
+//console.log(newAnimal); //Cat { species: 'Cat', breed: 'British Short Hair' }
+//console.log(newAnimal.details()); //This animal species is Cat and the breed is British Short Hair
