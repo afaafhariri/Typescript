@@ -17,7 +17,7 @@ const personExampleTwo = new Person("Messi", "37");
 //console.log(personExampleOne); //Person { name: 'Hariri', age: 21 }
 //console.log(personExampleTwo); //Person { name: 'Messi', age: '37' }
 
-//Inheritance & access modifiers
+//inheritance, constructors & access modifiers
 class Animal {
   protected species: string;
 

@@ -13,7 +13,7 @@ const personExampleOne = new Person("Hariri", 21);
 const personExampleTwo = new Person("Messi", "37");
 //console.log(personExampleOne); //Person { name: 'Hariri', age: 21 }
 //console.log(personExampleTwo); //Person { name: 'Messi', age: '37' }
-//Inheritance & access modifiers
+//inheritance, constructors & access modifiers
 class Animal {
     constructor(species) {
         this.species = species;
@@ -29,5 +29,5 @@ class Cat extends Animal {
     }
 }
 const newAnimal = new Cat("British Short Hair", "Cat");
-console.log(newAnimal); //Cat { species: 'Cat', breed: 'British Short Hair' }
-console.log(newAnimal.details());
+//console.log(newAnimal); //Cat { species: 'Cat', breed: 'British Short Hair' }
+//console.log(newAnimal.details()); //This animal species is Cat and the breed is British Short Hair
